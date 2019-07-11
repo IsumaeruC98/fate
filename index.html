@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Album</title>
+
+	<style type="text/css">
+	body {
+		overflow:hidden;
+	}
+
+	#album {
+		margin: auto;
+		width: 700px;
+		height: 600px;
+	}
+
+	#album .turn-page {
+		background-size: 100% 100%;
+		box-shadow: 0 0 2px 5px rgba(0,0,0,0.5);
+	}
+	</style>
+</head>
+<body>
+	<div id="album">
+		<div style="background-image: url('img/1.jpg');"></div>
+		<div style="background-image: url('img/2.jpg');"></div>
+		<div style="background-image: url('img/3.jpg');"></div>
+		<div style="background-image: url('img/4.jpg');"></div>
+		<div style="background-image: url('img/5.png');"></div>
+		<div style="background-image: url('img/6.jpg');"></div>
+		<div style="background-image: url('img/7.jpg');"></div>
+		<div style="background-image: url('img/8.jpg');"></div>
+		<div style="background-image: url('img/9.jpg');"></div>
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="turn.js"></script>
+
+	<script>
+		$('#album').turn({gradients: true, acceleration: true, 
+  autoCenter: true});
+	</script>
+</body>
+</html>
